@@ -2,16 +2,16 @@
 
 ### 1. Установка и настройка среды дома
  * Создайте [google-аккаунт](https://accounts.google.com/SignUp?continue=https%3A%2F%2Fwww.google.com.ua%2F&hl=uk), если у вас нет такового.
- * Добавьтесь в [сообщество](https://plus.google.com/u/0/communities/112954258801649130665) на google+.
- * Добавьте [меня](https://plus.google.com/u/0/101873532288467998728) в друзья.
+ * Добавьтесь в [сообщество](https://plus.google.com/u/0/communities/105463363023981981201) на google+.
+ * Добавьте [меня](https://plus.google.com/u/0/101873532288467998728) в друзья. Моя почта - **ievgentararaka@gmail.com**.
 
 #### Java 8
-1\. Скачать и установить [Java SE Development Kit 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
-<br>2\. Добавить переменную среды как описанно в туториале по [ссылке](http://java-course.ru/begin/install-jdk/)</br>
+ * Скачать и установить [Java SE Development Kit 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+ * Добавить переменные среды как описанно в туториале по [ссылке](http://java-course.ru/begin/install-jdk/)</br>
 
 #### IDE
 
-Скачать и установить [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/#chooseYourEdition)
+ * Скачать и установить [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/#chooseYourEdition)
 
 #### Git
 
