@@ -5,7 +5,7 @@ package com.courses.spalah;
  *
  * @author Ievgen Tararaka
  */
-public class HomeWork2String {
+public class HomeWorkStrings {
     /**
      * Метод должен вернуть количество четных чисел в строке.
      * <p>Например:

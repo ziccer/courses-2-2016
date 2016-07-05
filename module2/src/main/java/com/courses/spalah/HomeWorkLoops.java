@@ -5,7 +5,7 @@ package com.courses.spalah;
  *
  * @author Ievgen Tararaka
  */
-public class HomeWork2Loops {
+public class HomeWorkLoops {
     /**
      * Метод должен вернуть минимальное число
      * из заданного массива.
