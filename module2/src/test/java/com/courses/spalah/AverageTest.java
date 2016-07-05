@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import com.courses.spalah.util.RandomUtils;
 import com.courses.spalah.util.TestUtils;
-import com.courses.spalah.util.ValueToArrayPair;
+import com.courses.spalah.util.ValueArrayPair;
 import com.courses.spalah.variables.LoopTestVariables;
 import org.apache.commons.lang3.ArrayUtils;
 import org.junit.Test;
@@ -20,9 +20,9 @@ import static org.junit.Assert.assertTrue;
 public class AverageTest {
     private static final float PRECISION = 0.001F;
 
-    private ValueToArrayPair<Float, Short> testData;
+    private ValueArrayPair<Float, Short> testData;
 
-    public AverageTest(ValueToArrayPair<Float, Short> testData) {
+    public AverageTest(ValueArrayPair<Float, Short> testData) {
         this.testData = testData;
     }
 

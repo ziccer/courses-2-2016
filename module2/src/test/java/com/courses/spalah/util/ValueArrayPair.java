@@ -5,11 +5,11 @@ import java.util.Arrays;
 /**
  * @author Ievgen Tararaka
  */
-public class ValueToArrayPair<L, R> {
+public class ValueArrayPair<L, R> {
     public final L left;
     public final R[] right;
 
-    public ValueToArrayPair(L left, R[] right) {
+    public ValueArrayPair(L left, R[] right) {
         this.left = left;
         this.right = right;
     }

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import com.courses.spalah.util.RandomUtils;
 import com.courses.spalah.util.TestUtils;
-import com.courses.spalah.util.ValueToArrayPair;
+import com.courses.spalah.util.ValueArrayPair;
 import com.courses.spalah.variables.LoopTestVariables;
 import org.apache.commons.lang3.ArrayUtils;
 import org.junit.Test;
@@ -19,9 +19,9 @@ import static org.junit.Assert.assertTrue;
 @RunWith(Parameterized.class)
 public class ReverseTest {
 
-    private ValueToArrayPair<char[], Character> testData;
+    private ValueArrayPair<char[], Character> testData;
 
-    public ReverseTest(ValueToArrayPair<char[], Character> testData) {
+    public ReverseTest(ValueArrayPair<char[], Character> testData) {
         this.testData = testData;
     }
 

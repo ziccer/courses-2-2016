@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import com.courses.spalah.util.RandomUtils;
 import com.courses.spalah.util.TestUtils;
-import com.courses.spalah.util.ValueToArrayPair;
+import com.courses.spalah.util.ValueArrayPair;
 import com.courses.spalah.variables.LoopTestVariables;
 import org.apache.commons.lang3.ArrayUtils;
 import org.junit.Test;
@@ -18,9 +18,9 @@ import static org.junit.Assert.assertTrue;
  */
 @RunWith(Parameterized.class)
 public class MinTest {
-    private ValueToArrayPair<Integer, Integer> testData;
+    private ValueArrayPair<Integer, Integer> testData;
 
-    public MinTest(ValueToArrayPair<Integer, Integer> testData) {
+    public MinTest(ValueArrayPair<Integer, Integer> testData) {
         this.testData = testData;
     }
 
