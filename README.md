@@ -32,3 +32,8 @@
  * Переменные
  * Типы данных
  * Базовые операции
+
+[ДЗ #2](https://github.com/rxn1d/courses-2-2016/blob/master/module2/module_2_home_work.md):
+ * Git
+ * Реализация простейших алгоритмов
+ * Java code conventions
