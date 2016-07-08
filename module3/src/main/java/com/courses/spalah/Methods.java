@@ -13,5 +13,7 @@ public class Methods {
         return answer;
     }
 
-    void foo(){} // минимально-валидный метод
+    void foo(){
+
+    } // минимально-валидный метод
 }
