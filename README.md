@@ -55,4 +55,5 @@
  * Реализуем калькулятор
 
 4\. Домашки + практика
- [ДЗ #4](https://github.com/rxn1d/courses-2-2016/blob/master/module4/module_4_home_work.md)
+
+[ДЗ #4](https://github.com/rxn1d/courses-2-2016/blob/master/module4/module_4_home_work.md)
