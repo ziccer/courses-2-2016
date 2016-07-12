@@ -7,6 +7,7 @@ import java.io.IOException;
 public class Calculator {
     BufferedReader in; // буферизованный читатель строки из некоего потока (необязательно System.in)
 
+<<<<<<< HEAD
     public Calculator(InputStreamReader isr) {//конструктор
         in = new BufferedReader(isr); //создаем буфчитателя вокруг переданного потока-читателя
     }
@@ -15,6 +16,28 @@ public class Calculator {
         char op = ' '; //знак операции. Присвоения сделаны чтобы компилятор не ругался
         int state = 0; // 0 - читаем первое число, 1 - знак операции, 2 - второе число
         String str; // строка из потока
+=======
+    public static float culc(float a, float b, String operator) {
+        float result = 0;
+        switch (operator) {
+            case "+":
+                result = a + b;
+                break;
+            case "-":
+                result = a - b;
+                break;
+            case "*":
+                result = a * b;
+                break;
+            case "/":
+                result = a / b;
+                break;
+        }
+        return result;
+    }
+
+    public static String[] readFromConsole() {
+>>>>>>> 1d921b46a6617438944ecd22cd6eb70a8f71ae15
         try {
             // в цикле читаем строку, одновременно проверяем, что поток не кончился (!= null)
             // одновременно проверяем, что строка не пустая (условие выхода из цикла)
