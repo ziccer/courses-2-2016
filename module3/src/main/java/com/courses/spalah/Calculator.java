@@ -5,31 +5,51 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 
 public class Calculator {
-    BufferedReader in; // буферизованный читатель строки из некоего потока (необязательно System.in)
+    public static void main(String[] args) {
 
-<<<<<<< HEAD
-    public Calculator(InputStreamReader isr) {//конструктор
-        in = new BufferedReader(isr); //создаем буфчитателя вокруг переданного потока-читателя
+        System.out.println("Калькулятор.");
+        System.out.println("Введите выражение через пробел:");
+        System.out.println("Выход из программы - exit");
+
+        float argument1 = 0.0f;
+        float argument2 = 0.0f;
+        float result = 0.0f;
+        String operator = "";
+        float previous = 0.0f;
+
+        while (true) {
+            String[] array = readFromConsole();
+            if (array.length == 3) {
+                argument1 = Float.parseFloat(array[0]);
+                argument2 = Float.parseFloat(array[2]);
+                operator = array[1];
+            }
+            if (array.length == 2) {
+                argument1 = result;
+                argument2 = Float.parseFloat(array[1]);
+                operator = array[0];
+            }
+            if ("exit".equals(array[0])) {
+                break;
+            }
+            result = culc(argument1, argument2, operator);
+            previous = result;
+            System.out.println(result);
+        }
     }
-    public void run() {// основной метод класса
-        double valueOne = 0, valueTwo = 0; // значения в выражении
-        char op = ' '; //знак операции. Присвоения сделаны чтобы компилятор не ругался
-        int state = 0; // 0 - читаем первое число, 1 - знак операции, 2 - второе число
-        String str; // строка из потока
-=======
     public static float culc(float a, float b, String operator) {
         float result = 0;
-        switch (operator) {
-            case "+":
+        switch (operator.charAt(0)) {
+            case '+':
                 result = a + b;
                 break;
-            case "-":
+            case '-':
                 result = a - b;
                 break;
-            case "*":
+            case '*':
                 result = a * b;
                 break;
-            case "/":
+            case '/':
                 result = a / b;
                 break;
         }
@@ -37,49 +57,12 @@ public class Calculator {
     }
 
     public static String[] readFromConsole() {
->>>>>>> 1d921b46a6617438944ecd22cd6eb70a8f71ae15
         try {
-            // в цикле читаем строку, одновременно проверяем, что поток не кончился (!= null)
-            // одновременно проверяем, что строка не пустая (условие выхода из цикла)
-            while((str = in.readLine()) != null && !str.equals("")) {
-                switch (state) { // в зависимости от состояния
-                    case 0: // если состояние "читаем первое число"
-                        valueOne = Double.parseDouble(str); // читаем
-                        state = 1; // переключаем в состояние "читаем операцию"
-                        break;
-                    case 1: //состояние "читаем операцию"
-                        op = str.charAt(0);
-                        state = 2; // переключаем в состояние "читаем второе число"
-                        break;
-                    case 2:
-                        valueTwo = Double.parseDouble(str); // разбор второго числа
-                        // к этому моменту мы прочитали оба числа и его операцию
-                        switch (op) { // выбираем нужное действие, выводим результат
-                            case '+':
-                                System.out.println(valueOne + valueTwo);
-                                break;
-                            case '-':
-                                System.out.println(valueOne - valueTwo);
-                                break;
-                            case '*':
-                                System.out.println(valueOne * valueTwo);
-                                break;
-                            case '/':
-                                System.out.println(valueOne / valueTwo);
-                                break;
-                        }
-                        state = 0; // после печати, снова переключаемся в режим "читаем первое число"
-                }
-            }
+            BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
+            String input = bufferRead.readLine();
+            return input.split("\\s");
         } catch (IOException e) {
-            e.printStackTrace();
+            return new String[]{""};
         }
-    }
-
-    public static void main(String[] args) { // входная точка
-        // создаем объект Calc, передаем ему читателя вокруг system.in
-        // и тут же запускаем цикл чтения/печати
-        System.out.println("Start calculator");
-        new Calculator(new InputStreamReader(System.in)).run();
     }
 }
