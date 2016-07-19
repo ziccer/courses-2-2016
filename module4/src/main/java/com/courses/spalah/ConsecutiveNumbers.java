@@ -24,27 +24,33 @@ public class ConsecutiveNumbers {
      * @param args - аргументы коммандной строки
      */
     public static void main(String[] args) {
-        String[] array = readFromConsole();
+
+
         int x = 0;
-        int y = 0;
         float argument1;
         float argument2;
         String sign = " ";
-
+        String[] array = readFromConsole();
         argument1 = Float.parseFloat(array[2]);
         argument2 = Float.parseFloat(array[4]);
         sign = array[1];
 
-            if (argument2 - argument1 == 1) {
+        for (int i = 0; i < array.length; i++) {
+            x = i + 1;
+            if (x - i == 1) {
                 System.out.println("Строка содержит правильную последовательность цифр");
+                break;
             }
-            if (argument2 - argument1 != 1) {
+            if (x - i != 1) {
                 System.out.println("Строка содержит неправильную последовательность цифр");
+                break;
             }
+
+
+
         }
-
-
-    public static String[] readFromConsole() {
+    }
+    public static String[] readFromConsole () {
         try {
             BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
             String input = bufferRead.readLine();
