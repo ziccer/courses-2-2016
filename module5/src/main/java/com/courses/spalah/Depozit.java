@@ -12,7 +12,13 @@ public class Depozit {
     float procent;
     String name;
 
-    int year;
+public Depozit (float summa, float procent, String name){
+    this.summa = summa;
+    this.procent = procent;
+    this.name = name;
+}
+
+    private int year;
     float argument1;
     String[] array = readFromConsole();
 
@@ -21,7 +27,9 @@ public class Depozit {
         argument1 = Float.parseFloat(array[0]);
 
         float x = summa * (procent/100) * argument1;
+
         return x;
+
     }
 
 
@@ -29,19 +37,21 @@ public class Depozit {
 
         System.out.println("Введите количество лет депозита: ");
 
-        Depozit one = new Depozit();
-        one.summa = (float) 100.00;
-        one.procent = (float)10.00;
-        one.name = "Олег Барбарисович";
+        Depozit one = new Depozit(100.00f, 10.00f, "Олег Барбарисович");
+       // one.summa = (float)100.00f;
+      //  one.procent = (float)10.00;
+      //  one.name = "Олег Барбарисович";
 
 
         one.dohod();
-
-        System.out.println("Сумма депозита: " + one.summa + " гривен.");
-        System.out.println("Процент депозита: " + one.procent);
-        //System.out.println("Срок депозита: " + year + " года/лет.");
-        System.out.println();
-        System.out.println("Уважаемый " + one.name + " ваша чистая прибыль составила: " + one.dohod() + " гривен.");
+        if (one.dohod()>0) {
+            System.out.println("Сумма депозита: " + one.summa + " гривен.");
+            System.out.println("Процент депозита: " + one.procent);
+            System.out.println();
+            System.out.println("Уважаемый " + one.name + " ваша чистая прибыль составила: " + one.dohod() + " гривен.");
+        } else {
+            System.out.println("Введите корректное значение!!!");
+        }
 
 
     }
@@ -55,4 +65,6 @@ public class Depozit {
             return new String[]{""};
         }
     }
+
+
 }
