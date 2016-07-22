@@ -7,4 +7,5 @@ package com.courses.spalah.pack.house;
  */
 public class Guard {
     // поля и методы класса "Ограждение"
+    public static final float MAX_HEIGHT_METERS = 1.0F;
 }
