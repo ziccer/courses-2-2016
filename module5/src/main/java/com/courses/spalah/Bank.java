@@ -6,10 +6,10 @@ package com.courses.spalah;
 public class Bank {
 
     String name;
-    public double dep1;
-    double dep2;
-    double dep3;
-    double proc = 10;
+    private double dep1;
+    private double dep2;
+    private double dep3;
+    private double proc = 10;
 
     public Bank(String name) {
         this.name = name;
@@ -19,7 +19,7 @@ public class Bank {
         this.dep3 = 300;
     }
 
-    public double sAfterNlet(int n) {
+    private double sAfterNlet(int n) {
         double sDep1;
         double sDep2;
         double sDep3;
