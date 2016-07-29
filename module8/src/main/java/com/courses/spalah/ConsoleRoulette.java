@@ -5,6 +5,5 @@ package com.courses.spalah;
  */
 public class ConsoleRoulette {
     public static void main(String[] args) {
-
     }
 }
