@@ -102,4 +102,4 @@
 
 [ДЗ #9](https://github.com/rxn1d/courses-2-2016/blob/master/module9/module_9_home_work.md)
 
-10.\ Введение в модель памяти и сборку мусора
+10\. Введение в модель памяти и сборку мусора
