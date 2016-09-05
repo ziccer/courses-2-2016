@@ -49,7 +49,7 @@
    MyString string2 = new MyString('ч', 'x', 'z');
    MyString string3 = new MyString('й', 'в', 'а', . . .); // любое количество символов
    ```
-   * Функцию `print()` для печати всех символов в консоль
+   * Функцию `print()` для печати всех символов в консоль!
    ```
    MyString string1 = new MyString('a', 'b', 'c', 'd');
    string1.print();
