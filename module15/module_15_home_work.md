@@ -25,7 +25,7 @@
      * last_name (строковый тип)
      * address_id (целый тип, внешний ключ на таблицу address)
 
-      | id | first | last_name | address_id |
+      | id | first_name | last_name | address_id |
       | ---| ---   | ---       | ---        |
    * address
      * id (целый тип, первичный ключ)
@@ -38,15 +38,15 @@
  * Создаем тестовые данные в обоих таблицах
    * Создаем 5 записей в таблице address с помощью SQL INSERT:
 
-      | id | first | last_name | address_id |
-      |1|Sawyer|Ewing|1|
-
+     | id | first | last_name | address_id |
+     | ---| ---     | ---  | ---     |
 
 
    * Создаем 10ть записей в таблице person c помощью SQL INSERT запросов
 
-      | id | first | last_name | address_id |
-      |1   |Vincent|Keith      |1           |
+     | id | first_name | last_name | address_id |
+     | ---| ---     | ---  | ---     |
+      |1   |Vincent|Keith|1|
       |2|Fritz|Bray|2|
       |3|Lyle|Patterson|3|
       |4|Holmes|Hardy|4|
