@@ -35,7 +35,33 @@
 
       | id | country | city | address |
       | ---| ---     | ---  | ---     |
- * Создаем тестовые данные в обоих таблицах (минимум по 10 записей)
+ * Создаем тестовые данные в обоих таблицах
+   * Создаем 5 записей в таблице address с помощью SQL INSERT:
+
+      | id | first | last_name | address_id |
+      |1|Sawyer|Ewing|1|
+
+
+
+   * Создаем 10ть записей в таблице person c помощью SQL INSERT запросов
+
+      | id | first | last_name | address_id |
+      |1   |Vincent|Keith      |1           |
+      |2|Fritz|Bray|2|
+      |3|Lyle|Patterson|3|
+      |4|Holmes|Hardy|4|
+      |5|Cody|Larson|5|
+      |6|Gary|Ellis|6|
+      |7|Victor|Jensen|7|
+      |8|Galvin|Freeman|8|
+      |9|Jack|Foley|9|
+      |10|Christian|Torres|10|
+      |11|Peter|Haney|11|
+      |12|Cameron|Barry|12|
+      |13|Aladdin|Barnett|13|
+      |14|Lionel|Soto|14|
+      |15|Preston|Trujillo|15|
+
  * Таблица person обязательно должна содержать записи, которые ссылаются на таблицу address
  * Играем с SQL. Попробовать запросы:
    + INSERT
