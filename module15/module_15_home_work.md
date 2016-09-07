@@ -4,7 +4,7 @@
  * Ресусры:
    * Ресурсы из [модуля 14](https://github.com/rxn1d/courses-2-2016/blob/master/module14/module_14_home_work.md)
    * Книги
- * Head First SQL Your Brain on SQL - A Learner's Guide By Lynn Beighley - [ссылка](http://shop.oreilly.com/product/9780596526849.do)
+     * Head First SQL Your Brain on SQL - A Learner's Guide By Lynn Beighley - [ссылка](http://shop.oreilly.com/product/9780596526849.do)
  * С чем нужно быть знакомым
    * Что такое база данных
    * Какие они бывают
@@ -20,17 +20,17 @@
  * **Все запросы, которые вы будете использовали для этого задания добавляйтся в файл [people.sql](https://github.com/rxn1d/courses-2-2016/blob/master/module15/src/main/resources/people.sql)**.
  * Создаем базу данных `people`.
  * В ней создаем 2 таблицы
-   * `person``
-     * `id`` (целый тип, первичный ключ)
-     * `first_name`` (строковый тип)
-     * `last_name`` (строковый тип)
-     * `address_id`` (целый тип, внешний ключ на таблицу address)
+   * `person`
+     * `id` (целый тип, первичный ключ)
+     * `first_name` (строковый тип)
+     * `last_name` (строковый тип)
+     * `address_id` (целый тип, внешний ключ на таблицу address)
 
       | id | first_name | last_name | address_id |
       | ---| ---   | ---       | ---        |
-   * address
-     * `id`` (целый тип, первичный ключ)
-     * `address`` (строковый тип)
+   * `address`
+     * `id` (целый тип, первичный ключ)
+     * `address` (строковый тип)
 
       | id | address |
       | ---| ---     |
