@@ -17,7 +17,8 @@
 ### Устанавливаем [MySQL Community Edition (GPL)](http://dev.mysql.com/downloads/) (это сервер)
 
 ### Устанавливаем любой SQL клиент ([Heidi](http://www.heidisql.com/), [DBeaver](http://dbeaver.jkiss.org/), [My SQL Workbench](http://dev.mysql.com/downloads/workbench/), [DataGrip](https://www.jetbrains.com/datagrip/) и т.д.)
- * Создаем базу данных `people``
+ * **Все запросы, которые вы будете использовали для этого задания добавляйтся в файл [people.sql](https://github.com/rxn1d/courses-2-2016/blob/master/module15/src/main/resources/people.sql)**.
+ * Создаем базу данных `people`.
  * В ней создаем 2 таблицы
    * `person``
      * `id`` (целый тип, первичный ключ)
@@ -34,7 +35,7 @@
       | id | address |
       | ---| ---     |
  * Создаем тестовые данные в обоих таблицах
-   * Создаем 10 записей в таблице `address` с помощью SQL `INSERT``:
+   * Создаем 10 записей в таблице `address` с помощью SQL `INSERT`:
 
      | id | address |
      | ---| ---     |
@@ -50,7 +51,7 @@
      |10|Ap #650-4921 Aptent Ave|
 
 
-   * Создаем 15ть записей в таблице `person` c помощью SQL `INSERT`` запросов
+   * Создаем 15ть записей в таблице `person` c помощью SQL `INSERT` запросов
 
      | id | first_name | last_name | address_id |
      | ---| ---     | ---  | ---     |
@@ -70,12 +71,6 @@
      |14|Lionel|Soto|1|
      |15|Preston|Trujillo|1|
 
- * Таблица person обязательно должна содержать записи, которые ссылаются на таблицу address
- * Играем с SQL. Попробовать запросы:
-   + INSERT
-   + UPDATE
-   + DELETE
-   + TRUNCATE
-   + INSERT REPLACE
-   + MODIFY TABLE
-
+ * Играем с SQL и пишем запросы, которые умеют:
+   * Найти всех людей с именем, которое начинается на `G`
+   * Найти все адреса `id` которых больше 10
